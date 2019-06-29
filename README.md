@@ -30,7 +30,7 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] Explain the differences between `client-side routing` and `server-side routing`.
 
-The difference in these is were the routing, or page redirection ocurrs. Cleint-side routing uses the client machine, or the device the user is viewing the web app to control the routing. Server side mean the routing is done on the server and the information is transferred to the client.
+The difference in these is were the routing, or page redirection occurs. Cleint-side routing uses the client machine, or the device the user is viewing the web app to control the routing. Server side mean the routing is done on the server and the information is transferred to the client.
 
 - [ ] What does HTTP stand for?
 
