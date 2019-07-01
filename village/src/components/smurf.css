@@ -1,0 +1,32 @@
+.smurf-badge {
+  background: white;
+  width: 70%;
+  margin: 10px auto;
+  transition: all 0.3s linear;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 0;
+}
+
+.smurf-badge:hover {
+  background: #eee;
+}
+
+.link {
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.link:hover {
+  color: purple;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 1.8rem;
+}
+
+p {
+  font-size: 1.3rem;
+}

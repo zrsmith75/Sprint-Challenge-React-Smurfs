@@ -1,8 +1,9 @@
 import React, { Component } from "react";
 import { Route, Link } from "react-router-dom";
+import "./smurf.css";
 const Smurf = props => {
   return (
-    <React.Fragment>
+    <section className="smurf-badge">
       <Route path="/" exact>
         <div className="Smurf">
           <h3>{props.name}</h3>
@@ -10,10 +11,10 @@ const Smurf = props => {
           <p>{props.age} smurf years old</p>
         </div>
       </Route>
-      <Link to={`/smurf/${props.id}`} smurfs={props.smurf}>
+      <Link to={`/smurf/${props.id}`} smurfs={props.smurf} className="link">
         {props.name} Profile
       </Link>
-    </React.Fragment>
+    </section>
   );
 };
 
