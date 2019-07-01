@@ -4,10 +4,12 @@ import axios from "axios";
 import "./App.css";
 import SmurfForm from "./components/SmurfForm";
 import Smurfs from "./components/Smurfs";
+import Smurf from "./components/Smurf";
 
 class App extends Component {
   constructor(props) {
     super(props);
+    const match = props.match;
     this.state = {
       smurfs: []
     };
@@ -24,19 +26,21 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Link to="/">Home</Link>
-        <Link to="/addSmurf">Add New Smurf</Link>
+        <navbar>
+          <Link to="/" className="nav-link">
+            Home
+          </Link>
+          <Link to="/addSmurf" className="nav-link">
+            Add New Smurf
+          </Link>
+        </navbar>
+
         <Route path="/addSmurf" component={SmurfForm} />
         <Route
           path="/"
           component={() => <Smurfs smurfs={this.state.smurfs} />}
           exact
         />
-        {/* <Route
-          path="/smurf/:id"
-          component={SmurfPage}
-          smurfs={this.state.smurfs}
-        /> */}
       </div>
     );
   }
