@@ -10,6 +10,9 @@ const Smurf = props => {
           <p>{props.age} smurf years old</p>
         </div>
       </Route>
+      <Link to={`/smurf/${props.id}`} smurfs={props.smurf}>
+        {props.name} Profile
+      </Link>
     </React.Fragment>
   );
 };
